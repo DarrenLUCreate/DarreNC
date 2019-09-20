@@ -1,0 +1,41 @@
+class Linklist:
+
+    def __init__(self,data):
+        self.data = None
+        self.next = None
+        """
+        Initialize your data structure here.
+        """
+        
+
+    def get(self, index: int) -> int:
+        """
+        Get the value of the index-th node in the linked list. If the index is invalid, return -1.
+        """
+        if self.data == None:
+            return -1  
+        if index == 0:
+            return self.data
+        dataN = self.next
+        count = 1
+        while dataN is not None:
+            dataN = dataN.next
+            count +=1
+        return count
+            
+        
+
+    def addAtHead(self, val: int) -> None:
+        """
+        Add a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list.
+        """
+        if self data = None:
+            self.data = data
+            return
+        temp = self.data
+        self.data = data
+        tempnode = self.next
+        self.next = Linklist()
+        self.next.data = temp
+        self.next.next = tempnode
+        return
